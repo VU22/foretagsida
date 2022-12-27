@@ -1,0 +1,28 @@
+.big {
+    height: 300px;
+    border: 2px solid black;
+    display: flex;
+    }
+
+
+    .small {
+        height: 175px;
+        width: 175px;
+        margin: 5px;
+        background: red;
+    }    
+    @media(max-width: 400px) {
+        .small{
+            background: green;
+        }   
+
+    } 
+    @media(max-width:600px){
+        .big {
+            flex-direction: column;
+            align-items: center;
+        }  
+        .small{
+            background: black;
+        }    
+    } 

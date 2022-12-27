@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dokument</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/khand" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/zelmud-script" rel="stylesheet">
+    <script src="script.js"></script> 
+    <style> 
+    body { 
+        background-color: white; 
+    } 
+    .dark-mode { 
+        background-color: black; 
+    } 
+  
+      </style> 
+    </head>
+<body>
+    
+    <header>
+        <p class="hat">
+           <br><p class="logo">Viktoria Photography</p><br>
+           <p class="slogan">Fångar  värdefulla  ögonblickar<p>
+           <p class="est">est. 2022</p>
+       </p> 
+    </header>
+    
+    <div>
+        <button onclick="darkMode()">Dark mode</button>
+    </div>
+    <div>
+        <nav class="menu">
+            <ul>
+                <li><a href="startsida.html">Hem</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="kontaktsida.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </div>
+  
+    <div>
+        <p class="MagicText">Fotografering har en verkligt magisk effekt.<br> Fotografi tar oss tillbaka till det ögonblick då det togs.<br> Ibland väcker det minnen av en doft, ett ljud, en flyktig känsla som vi upplevde i det ögonblicket.<br> Och viktigast av allt, ett fotografi kan berätta en historia mer färgstarkt än några ord.</p>
+    </div>  
+    
+    <!-- Slideshow container -->
+        <div class="slideshow-container">
+        
+            <!-- Full-width images with number and caption text -->
+          
+            <div class="mySlides fade">
+                <img class="active" src="https://i.postimg.cc/Gm0PhTYp/image0.png"/>
+            </div>
+            <div class="mySlides fade">
+                <img src="https://i.postimg.cc/hGsVrCYJ/image1.png" />
+            </div>
+            <div class="mySlides fade">
+                <img src="https://i.postimg.cc/MG9jRncV/image2.png" />
+            </div>
+            <div class="mySlides fade">
+                <img src="https://i.postimg.cc/5yMnjnjs/image0-5.png" />
+            </div>
+            <div class="mySlides fade">
+                <img src="https://i.postimg.cc/pVq2f7Jb/image0-4.png"/>
+            </div>
+          
+        
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            
+        </div>  
+    
+        <script>
+            
+            let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+function darkMode() { 
+
+var element = document.body; 
+
+element.classList.toggle("dark-mode"); 
+
+} 
+
+            </script>
+            
+
+</body>
+<footer>
+    <div class="container">
+        <!-- Rights-->
+            <p class="rights"><span>©  </span><span class="copyright-year">2022</span><span> </span><span>Viktoria Photography</span><span> - </span><span>All Rights Reserved.</span></p>
+    </div>
+</footer>
+</html>

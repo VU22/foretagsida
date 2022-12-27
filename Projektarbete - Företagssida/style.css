@@ -1,0 +1,242 @@
+* {
+	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 250px;;
+    display:flexbox;
+	justify-content:center;
+    align-items: center;
+	box-shadow: 0 5px 15px rgba(0,0,0,.2);	
+    }
+ 
+.logo {
+    font-family: 'Zelmud Script',sans-serif;
+    font-size: 60px;
+    
+    justify-content:center;
+    text-align: center;
+    color: rgb(72, 71, 71);
+    height: auto !important;
+    
+} 
+.slogan {
+    font-family:'khand',sans-serif;
+    font-size: 20px;
+    margin:30px;
+    text-align:center;
+    justify-content: center;
+    color: rgb(82, 81, 81);
+    
+} 
+.est {
+    font-family:'khand',sans-serif;
+    font-size: 15px;
+    text-align:center;
+    justify-content: center;
+    color: rgb(85, 84, 84);
+
+}
+
+
+@import url('https://fonts.cdnfonts.com/css/zelmud-script');
+.menu {
+    align-self: center;
+   margin: 0 0.8em 0 0;
+
+}   
+ul {
+	display: flex;
+    flex-flow: nowrap;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	transition: .5s;
+    list-style-type: none;
+    margin: auto;
+}
+
+ul li a {
+	padding: 10px 20px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: rgb(67, 66, 66);
+	font-family:'khand',sans-serif;
+    transition: .5s;
+    margin: auto;
+}
+
+ul li a:hover {
+	background: rgb(63, 63, 63);
+	color: #fff;
+    transition: .5s
+}
+* {box-sizing:border-box}
+.mySlides {display:inline-flex}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  display: flex; 
+  max-width: 570px;
+  position: relative;
+  margin: auto;
+  
+}
+
+/* Hide the images by default */
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position:absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+  
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+/* menu*/
+.menu li{
+    display:inline;
+    justify-content: left;
+}
+
+.MagicText {
+    justify-content:center;
+    text-align:center;
+    flex-direction: row;
+    margin: 50px;
+    font-family:'khand',sans-serif; 
+    color: rgb(82, 81, 81);
+
+    }  
+    @import url('https://fonts.cdnfonts.com/css/khand'); 
+      
+/* kontaktsida*/
+.bigbox1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+    gap: 80px;
+    background-color:white;
+    
+}
+.bigbox2{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+   
+    
+}
+
+.bild{
+    
+    justify-content: flex;
+    flex-direction: column;
+    gap: 10px;
+    display: flex;
+    height: 100px;
+}
+.kontakt{
+    display: flex;
+    justify-content: flex;
+    flex-direction: column;
+    gap: 0px;
+    font-family:'khand',sans-serif; 
+    color: rgb(255, 255, 255);
+    
+}
+.google{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: none;
+    
+    
+}
+.form {
+    font-family:'khand',sans-serif; 
+    color: rgb(255, 255, 255);
+    gap:20px;
+    display:flexbox;
+}  
+/*portfolio*/
+.thumb img  {
+    justify-content: center;
+    margin: 60px;
+    display:flexbox;
+
+}
+
+.footer {
+    text-align: center;
+} 
+.rights{
+    margin-top: 20px;
+    margin-bottom:10px;
+    text-align: center;
+    font-size:small;
+    font-style: uppercase;
+    font-family:'khand',sans-serif; 
+    color: rgb(82, 81, 81);
+
+}

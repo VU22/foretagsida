@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="style.css"/>
+     <link href="https://fonts.cdnfonts.com/css/khand" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/zelmud-script" rel="stylesheet">
+    <style> 
+
+        body { 
+  
+           background-color: white; 
+           color: black; 
+        } 
+  
+        .dark-mode { 
+            background-color: black; 
+            color: white; 
+  
+        } 
+  
+      </style> 
+</head>
+
+<body>
+    <header>
+        <p class="hat"><br>
+           <p class="logo">Viktoria Photography</p><br>
+           <p class="slogan">Fångar  värdefulla  ögonblickar<p>
+           <p class="est">est. 2022</p>
+       </p> 
+       </header>
+    
+    <button onclick="darkMode()">Dark mode</button>
+    <div>
+        <nav class="menu">
+            <ul>
+            <li><a href="startsida.html">Hem</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="kontaktsida.html">Kontakt</a></li>
+        </ul>
+        </nav>
+</div>
+ <div>  
+    <div class="bild">    
+        <img src="https://i.postimg.cc/htnMG9ct/image0-3.jpg"/>
+       </div>
+    <div class="bigbox1">
+   <div class="kontakt">
+    <b>Kontakta oss</b>
+    <p><b>Telefon:</b> 0720470790 <br> <b>Oppettider:</b> mån-fre 9:00 – 16:00</p>
+    <div>
+        <p><b>Adress:</b> Arne Beurlings Torg 3 <br>
+            164 40 Kista</p>
+       </div>
+</div>
+<div class="bigbox2">
+    <div>
+        <form class="form" name="feedback" method="POST" action="/feedback.php">
+            <div class="nfofield">Fyll i dina uppgifter så kontaktar vi dig</div>
+            <select name="theme" required="required">
+              <option value="">Välja ett av följande ämnen</option>
+              <option>Köp av tjänst</option>
+              <option>Frågor</option>
+              <option>Synpunkter</option>
+              
+            </select>
+            <div>Förnamn</div>
+            <input type="text" name="name" required="required">
+            <div>Email</div>
+            <input type="email" name="email" required="required">
+            <div>Meddelannde</div>
+            <textarea name="message"></textarea><br>
+            <input type="submit" name="submit_btn" value="Sent">
+          </form>
+    </div>
+
+</div>
+</div>
+    <div class="google">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2030.5703122682025!2d17.955032516166703!3d59.406881081686045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9eed35daf923%3A0x5b563992ce35eb40!2sScandic%20Victoria%20Tower!5e0!3m2!1sru!2sse!4v1671474361657!5m2!1sru!2sse" width="1500" height="200" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   </div>
+   
+</div>
+</div>
+
+<script>
+    function darkMode() { 
+
+var element = document.body;
+ 
+
+element.classList.toggle("dark-mode"); 
+
+} 
+</script>
+</body>
+<footer>
+    <div class="container">
+                <!-- Rights-->
+                <p class="rights"><span>©  </span><span class="copyright-year">2022</span><span> </span><span>Viktoria Photography</span><span> - </span><span>All Rights Reserved.</span></p>
+              </div>
+</footer>
+</html>
