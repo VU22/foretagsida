@@ -27,11 +27,11 @@
 
 <body>
     <header>
-        <p class="hat"><br>
-           <p class="logo">Viktoria Photography</p><br>
-           <p class="slogan">Fångar  värdefulla  ögonblickar<p>
-           <p class="est">est. 2022</p>
-       </p> 
+        <p class="hat">
+            <br><p class="logo">Viktoria Photography</p>
+            <p class="slogan">Fångar  ögonblickar<p>
+            <p class="est">est. 2012</p>
+        </p> 
        </header>
     
     <button onclick="darkMode()">Dark mode</button>
@@ -43,22 +43,17 @@
             <li><a href="kontaktsida.html">Kontakt</a></li>
         </ul>
         </nav>
-</div>
- <div>  
-    <div class="bild">    
-        <img src="https://i.postimg.cc/htnMG9ct/image0-3.jpg"/>
-       </div>
-    <div class="bigbox1">
-   <div class="kontakt">
-    <b>Kontakta oss</b>
-    <p><b>Telefon:</b> 0720470790 <br> <b>Oppettider:</b> mån-fre 9:00 – 16:00</p>
-    <div>
-        <p><b>Adress:</b> Arne Beurlings Torg 3 <br>
-            164 40 Kista</p>
-       </div>
-</div>
-<div class="bigbox2">
-    <div>
+    </div>
+  
+    <main id="main">
+        <article class="kontakt">
+            <b>Kontakta oss</b>
+            <p><b>Telefon:</b> 0720470790 <br> <b>Oppettider:</b> mån-fre 9:00 – 16:00</p>
+            <p><b>Adress:</b> Arne Beurlings Torg 3 <br> 164 40 Kista</p>
+            
+        </article> 
+<section id="form">
+    
         <form class="form" name="feedback" method="POST" action="/feedback.php">
             <div class="nfofield">Fyll i dina uppgifter så kontaktar vi dig</div>
             <select name="theme" required="required">
@@ -66,8 +61,8 @@
               <option>Köp av tjänst</option>
               <option>Frågor</option>
               <option>Synpunkter</option>
-              
-            </select>
+              </select>
+
             <div>Förnamn</div>
             <input type="text" name="name" required="required">
             <div>Email</div>
@@ -76,14 +71,17 @@
             <textarea name="message"></textarea><br>
             <input type="submit" name="submit_btn" value="Sent">
           </form>
-    </div>
+</section> 
+     </main>
 
-</div>
-</div>
-    <div class="google">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2030.5703122682025!2d17.955032516166703!3d59.406881081686045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9eed35daf923%3A0x5b563992ce35eb40!2sScandic%20Victoria%20Tower!5e0!3m2!1sru!2sse!4v1671474361657!5m2!1sru!2sse" width="1500" height="200" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-   </div>
-   
+
+<aside id="map">
+    <p class="bild">    
+    <img src="https://i.postimg.cc/htnMG9ct/image0-3.jpg"width="400" height="300" />
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2030.5703122682025!2d17.955032516166703!3d59.406881081686045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9eed35daf923%3A0x5b563992ce35eb40!2sScandic%20Victoria%20Tower!5e0!3m2!1sru!2sse!4v1671474361657!5m2!1sru!2sse" width="300" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </p>
+
+</aside>
 </div>
 </div>
 
